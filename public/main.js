@@ -179,5 +179,10 @@ angular.module('myApp', [])
         function checkForWin() {
             return $scope.gameWord.every(letter => letter.shown);
         }
+
+        $scope.showHintOption = () =>{
+            $scope.showHint = true;
+            $scope.$apply();
+        };
     }]);
     

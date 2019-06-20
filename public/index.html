@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!-- All the includes -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,22 +22,31 @@
 
 <body ng-app="myApp" ng-cloak>
     <div ng-controller="hangmanController">
+        <!-- Hangman title position should change based on status of the game. -->
         <h1 ng-class="!inGame && !hangman ? 'title title-home' : 'title'">HanGMaN</h1>
+
         <h3 class="score" ng-bind="score"></h3>
-        <h3 class="hints" ng-bind="hints"></h3>
+        <!-- Modal for score -->
+        <a class="hints" ng-bind="hints" ng-click="showHintOption()"></a>
+
+        <!-- Outside game . Showing play button-->
         <div ng-show="!inGame && !hangman">
             <div class="playbtn">
                 <button ng-click=play() class="waves-effect waves-light btn-large play">PLAY</button>
             </div>
         </div>
 
+        <!-- Hangman canvas -->
         <div ng-show="hangman" class="hangman-region">
             <canvas id="myCanvas" width="600" height="800">
                 <!-- style="border:1px solid #000000;"> -->
             </canvas>
         </div>
 
+        <!-- Inside game -->
         <div ng-show="inGame">
+
+            <!-- word area -->
             <div ng-show="!hangman" class="wordArea">
                 <span ng-repeat="letter in gameWord track by $index">
                     <div class="letter">
@@ -46,6 +56,7 @@
                 </span>
             </div>
 
+            <!-- keyboard -->
             <div class="letters" id="alphabets">
                 <div class="rows">
                     <div ng-repeat="key in alphabet1" class="cols">
@@ -69,6 +80,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- script includes -->
         <script src="main.js"></script>
         <script src="sw.js"></script>
         <script src="app.js"></script>
