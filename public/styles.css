@@ -1,0 +1,110 @@
+.rows {
+    margin: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cols{
+    margin: 0.5vw;
+}
+.alphabet{
+    font-size: 3vw;
+    padding: 0 3vw;
+}
+.letters {
+    display: block;
+    width: 64vw;
+    position: absolute;
+    top: 66vh;
+    left: 18vw;
+}
+
+.title{
+    color:darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    display: block;
+    position: absolute;
+    font-size: 4em;
+    top:5vh;
+    left:18vw;
+    width: 64vw;
+    text-align: center;
+}   
+.title-home{
+    top:37vh;
+}
+
+.fallback{
+    display: block;
+    position: absolute;
+    top:40vh;
+    left: 40vw;
+}
+.score {
+    color:cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    font-size: 2em;
+    top: 0vh;
+    left: 85vw;
+    text-align: right
+}
+
+.hints {
+    color:orange;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    font-size: 2em;
+    top: 0vh;
+    left: 15vw;
+    text-align: right
+}
+
+.playbtn {
+    display: flex;
+    position: absolute;
+    left: 35vw;
+    top: 55vh;
+}
+
+.play{
+ font-size: 2em;
+}
+
+.wordArea{
+    display:flex;
+    position: absolute;
+    left:5%;
+    width:90%;
+    top:20%;
+    height:40%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hangman-region{
+    position: absolute;
+    top: 19vh;
+    left: 17vw;
+}
+
+.letter{
+font-size: 6vw;
+padding:1vw;
+}
+
+.box{
+    border: 5px solid cornflowerblue;
+    padding: 1%;
+}
+
+.some-margin{
+    padding: 2%;
+}

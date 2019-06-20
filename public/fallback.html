@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HanGMaN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
+    <link href="materialize.min.css" rel="stylesheet">
+    <script src="materialize.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="/manifest.json" rel="manifest">
+    <link rel="apple-touch-icon" href="/icons/mipmap-hdpi/ic_launcher.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#eee">
+    <meta name="theme-color" content="#eee">
+</head>
+
+<body ng-app="myApp" ng-cloak>
+    <div ng-controller="hangmanController">
+        <h1 class="fallback">
+            Oops!!! you need internet!!!
+            <a href="/" class="btn-large">Go to the Homepage</a>
+        </h1>
+
+    </div>
+    <script src="main.js"></script>
+    <script src="sw.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

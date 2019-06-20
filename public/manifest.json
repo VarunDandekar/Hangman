@@ -1,0 +1,46 @@
+{
+    "name": "HanGMan",
+    "short_name": "HanGMan",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#eee",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icons/mipmap-mdpi/ic_launcher.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/icons/mipmap-hdpi/ic_launcher.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/icons/mipmap-xhdpi/ic_launcher.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/icons/mipmap-xxhdpi/ic_launcher.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/icons/mipmap-xxxhdpi/ic_launcher.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/icons/mipmap-xxxxhdpi/ic_launcher.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "/icons/mipmap-xxxxxhdpi/ic_launcher.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
