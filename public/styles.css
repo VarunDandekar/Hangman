@@ -16,7 +16,7 @@
     display: block;
     width: 64vw;
     position: absolute;
-    top: 66vh;
+    top: 70vh;
     left: 18vw;
 }
 
@@ -61,8 +61,8 @@
     display: block;
     position: absolute;
     font-size: 2em;
-    top: 0vh;
-    left: 15vw;
+    top: 3vh;
+    left: 13vw;
     text-align: right
 }
 
@@ -96,10 +96,19 @@
 }
 
 .letter{
-font-size: 6vw;
+font-size: 5vw;
 padding:1vw;
 }
 
+.wordHint{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 80vw;
+    left: 10vw;
+    color: darkblue;
+    top:57vh;
+}
 .box{
     border: 5px solid cornflowerblue;
     padding: 1%;

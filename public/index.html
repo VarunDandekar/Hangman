@@ -27,7 +27,27 @@
 
         <h3 class="score" ng-bind="score"></h3>
         <!-- Modal for score -->
-        <a class="hints" ng-bind="hints" ng-click="showHintOption()"></a>
+        <a class="hints modal-trigger" ng-bind="hints" href="#hintModal"></a>
+
+        <div id="hintModal" class="modal">
+            <div ng-show="showHint">
+                <div class="modal-content">
+                    <h5 class="blue-text text-darken-4">Reveal a letter?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button ng-click="takeHint()" class="modal-close btn-flat cyan-text text-darken-4">Yes</a>
+                    <button href="!#" class="modal-close btn-flat cyan-text text-darken-4">No</a>
+                </div>
+            </div>
+            <div ng-show="!showHint">
+                <div class="modal-content">
+                    <h5 class="blue-text text-darken-4">No hints left!!!</h5>
+                </div>
+                <div class="modal-footer">
+                    <button href="!#" class="modal-close btn-flat cyan-text text-darken-4">Ok</a>
+                </div>
+            </div>
+        </div>
 
         <!-- Outside game . Showing play button-->
         <div ng-show="!inGame && !hangman">
@@ -56,6 +76,7 @@
                 </span>
             </div>
 
+            <div ng-show="!hangman" class="wordHint" ng-bind ="wordHint"></div>
             <!-- keyboard -->
             <div class="letters" id="alphabets">
                 <div class="rows">
